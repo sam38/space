@@ -1,0 +1,82 @@
+@image-border-color: #ccc;
+
+@intro-video-offset: -100px; 
+
+.RoundBorders(@radius) {
+	border-radius: @radius;
+	-moz-border-radius: @radius;
+	-webkit-border-radius: @radius;
+}
+
+ *{outline:none!important;}
+html,body{ height:100%!important;font-size:14px;}
+
+.nopadding{padding-left: 0!important;padding-right: 0!important;}
+body{
+	padding: 20px 0 40px; background: #fafafa;
+	a.btn-go-home{ margin-top: 20px; }
+	img.logo{ border: 1px solid #ddd; background: #fff; padding: 10px; margin-bottom: 10px; height: 120px;}
+	.btn-xl{ padding: 30px 20px; font-size: 24px; font-weight: bold; }
+
+	.home-options-help{
+		margin-bottom: 10px; padding: 20px; text-shadow: 1px 1px 2px #ccc;
+	}
+	.panel-home-form{
+		margin-top: 15px;
+	}
+	.btn-cancel-form{
+		cursor: pointer;
+	}
+	ol.column-template li{
+		padding: 10px 5px; font-size: 11px; margin-left: 10px; display: inline-block;
+	}
+
+	#csv_upload_dropzone{
+		padding: 50px 30px; background: #fafafa; border: 1px solid #ccc;
+		border-radius: 4px; width: 100%; cursor: pointer;
+	}
+	#csv_upload_dropzone:hover{
+		border-style: dashed; border-color: blue;
+	}
+	form.form_upload_csv{
+		margin: 20px;
+		// input[type="file"]{
+		// 	padding: 20px; background: #fafafa; border: 1px solid #ccc;
+		// 	border-radius: 4px; width: 100%;
+		// }
+	}
+	.breadcrumb{
+		border: 1px solid #ddd; margin-top: 15px;
+	}
+	ul.history-list{
+		margin: 0; padding: 0; list-style: none;
+		li{
+			a{
+				display: block;	padding: 20px; border: 1px solid #ddd; background: #fff;
+				border-radius: 4px;
+			}
+			a:hover{
+				border-color: blue; cursor: pointer;
+			}
+		}
+	}
+	.detail-filter{
+		position: fixed; overflow: auto; width: 80px; left:0; right:0; top: 0; bottom: 0; box-shadow: 0 5px 5px #aaa; font-size: 11px; z-index: 200; background: #fff;
+		padding: 30px 0;
+		ul{
+			margin: 0; padding: 0; list-style: none;
+			li{ 
+				a{ padding: 5px; display: block;}
+				.badge{ font-size: 11px; }
+			}
+			li:hover{ background: #96d4f3;}
+			li.active{ background: #1f7ead; a{color: #fff;} }
+		}
+	}
+	div.pagination a{
+		padding: 4px; margin: 0 2px;
+	}
+	img.company-logo{max-width: 100%;max-height: 64px;}
+	.pagination{ margin: 5px 0;}
+	.copyright{ position: fixed; bottom: 0; left:0; right: 0; padding: 0 0 10px; font: 11px Arial; color: #ccc; background: #fafafa; }
+}

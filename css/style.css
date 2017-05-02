@@ -1,0 +1,19 @@
+body{
+	font-size: 14px;
+}
+.toptab_info{
+	font-size: 12px;
+}
+.header header .navbar-default .navbar-collapse .nav > li > a:hover, 
+.header header .navbar-default .navbar-collapse .nav > li > a {
+    font-size: 15px!important; cursor: pointer!important;
+}
+.header header .navbar-default .navbar-collapse .nav > li > a > label {
+	cursor: pointer;
+}
+.header header .navbar-default .navbar-collapse .nav > li.active > a {
+	background-color: #8eb4cb!important; color: #fff; text-transform: uppercase; padding: 8px 0 3px;
+}
+.footer footer p{
+	color: #888; font-size: 11px;
+}
